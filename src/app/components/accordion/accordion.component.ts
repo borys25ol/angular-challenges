@@ -7,18 +7,7 @@ import { AccordionItem } from './accordion-item.interface'
   styleUrls: ['./accordion.component.scss'],
 })
 export class AccordionComponent implements OnInit {
-  @Input() items: AccordionItem[] = [
-    {
-      title: 'Example 1',
-      content: 'Example Content 1',
-      isExpanded: false,
-    },
-    {
-      title: 'Example 2',
-      content: 'Example Content 2',
-      isExpanded: false,
-    },
-  ]
+  @Input() items: AccordionItem[]
 
   constructor() {}
 
