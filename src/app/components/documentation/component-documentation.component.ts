@@ -2,11 +2,11 @@ import { Component } from '@angular/core'
 import { AccordionItem } from '../accordion/accordion-item.interface'
 
 @Component({
-  selector: 'app-documentation',
-  templateUrl: './documentation.component.html',
-  styleUrls: ['./documentation.component.scss'],
+  selector: 'app-component-documentation',
+  templateUrl: './component-documentation.component.html',
+  styleUrls: ['./component-documentation.component.scss'],
 })
-export class DocumentationComponent {
+export class ComponentDocumentationComponent {
   accordionItems: AccordionItem[] = [
     {
       title: 'Example 1',
