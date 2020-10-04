@@ -19,4 +19,6 @@ export class AppComponent {
       isExpanded: false,
     },
   ]
+
+  progressValue = 25
 }
