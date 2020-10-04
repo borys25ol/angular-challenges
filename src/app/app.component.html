@@ -1,55 +1,15 @@
 <app-toolbar [title]="'100 Angular challenges'">
   <ul>
-    <li>Components</li>
-    <li>Directives</li>
-    <li>Services</li>
-    <li>Pipes</li>
-    <li>Other</li>
+    <li routerLink="">Components</li>
+    <li routerLink="directives">Directives</li>
+    <li routerLink="services">Services</li>
+    <li routerLink="pipes">Pipes</li>
+    <li routerLink="other">Other</li>
   </ul>
 </app-toolbar>
 
 <main>
-  <app-card
-    [iconClasses]="'fas fa-info-circle'"
-    [title]="'Top of Page'"
-    [subTitle]="'Components'"
-  >
-    <p body>Scroll 400px down the page to render.</p>
-  </app-card>
-
-  <app-card
-    [iconClasses]="'fas fa-info-circle'"
-    [title]="'Starts Rating'"
-    [subTitle]="'Components'"
-  >
-    <app-star-ratings body [rating]="5"></app-star-ratings>
-  </app-card>
-
-  <app-card
-    [iconClasses]="'fas fa-info-circle'"
-    [title]="'Progress Bar'"
-    [subTitle]="'Components'"
-  >
-    <app-progress-bar body [value]="progressValue"></app-progress-bar>
-    <button footer (click)="progressValue = 75">Update</button>
-  </app-card>
-
-  <app-card
-    [iconClasses]="'fas fa-info-circle'"
-    [title]="'Accordion'"
-    [subTitle]="'Components'"
-  >
-    <app-accordion body [items]="accordionItems"></app-accordion>
-  </app-card>
-
-  <app-card
-    [iconClasses]="'fas fa-info-circle'"
-    [title]="'Card'"
-    [subTitle]="'Components'"
-  >
-    <p body>Body content</p>
-    <p footer>Footer content</p>
-  </app-card>
+  <router-outlet></router-outlet>
 </main>
 
 <app-top-of-page></app-top-of-page>
