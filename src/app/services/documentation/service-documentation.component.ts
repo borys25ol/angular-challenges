@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-service-documentation',
   templateUrl: './service-documentation.component.html',
-  styleUrls: ['./service-documentation.component.scss']
+  styleUrls: ['./service-documentation.component.scss'],
 })
 export class ServiceDocumentationComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

@@ -8,7 +8,11 @@ import { PipeDocumentationComponent } from './pipes/documentation/pipe-documenta
 export const routes: Routes = [
   {
     path: '',
-    component: ComponentDocumentationComponent,
+    loadChildren: () => {
+      return import('./components/components.module').then(
+        (m) => m.ComponentsModule
+      )
+    },
   },
   {
     path: 'directives',
