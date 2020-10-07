@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { RouterModule, Routes } from '@angular/router'
+import { FormsModule } from '@angular/forms'
 
+import { SharedModule } from '../shared/shared.module'
 import { ComponentDocumentationComponent } from './documentation/component-documentation.component'
 import { AccordionComponent } from './accordion/accordion.component'
 import { ProgressBarComponent } from './progress-bar/progress-bar.component'
 import { StarRatingsComponent } from './star-ratings/star-ratings.component'
-import { SharedModule } from '../shared/shared.module'
+import { CreditCardInputComponent } from './credit-card-input/credit-card-input.component'
 
 const routes: Routes = [
   {
@@ -21,7 +23,13 @@ const routes: Routes = [
     ComponentDocumentationComponent,
     ProgressBarComponent,
     StarRatingsComponent,
+    CreditCardInputComponent,
   ],
-  imports: [CommonModule, SharedModule, RouterModule.forChild(routes)],
+  imports: [
+    CommonModule,
+    SharedModule,
+    RouterModule.forChild(routes),
+    FormsModule,
+  ],
 })
 export class ComponentsModule {}

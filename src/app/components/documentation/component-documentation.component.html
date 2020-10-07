@@ -5,6 +5,24 @@
 
 <app-card
   [iconClasses]="'fas fa-info-circle'"
+  [title]="'Credit Card Input'"
+  [subTitle]="'Components'"
+>
+  <div body>
+    <app-credit-card-input
+      [creditCardNumber]="'4111222233334444'"
+      [isReadOnly]="false"
+    ></app-credit-card-input>
+
+    <app-credit-card-input
+      [creditCardNumber]="'4111222233334444'"
+      [isReadOnly]="true"
+    ></app-credit-card-input>
+  </div>
+</app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
   [title]="'Top of Page'"
   [subTitle]="'Components'"
 >
