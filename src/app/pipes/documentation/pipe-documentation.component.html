@@ -5,6 +5,16 @@
 
 <app-card
   [iconClasses]="'fas fa-info-circle'"
+  [title]="'Card Formatter'"
+  [subTitle]="'Pipes'"
+>
+  <p body>{{ '12345678912345678' | creditCardFormatter }}</p>
+  <p body>{{ '123456789123456a' | creditCardFormatter }}</p>
+  <p body>{{ '1234567891234567' | creditCardFormatter }}</p>
+</app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
   [title]="'Truncate'"
   [subTitle]="'Pipes'"
 >
