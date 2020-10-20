@@ -8,7 +8,8 @@ import { ComponentDocumentationComponent } from './documentation/component-docum
 import { AccordionComponent } from './accordion/accordion.component'
 import { ProgressBarComponent } from './progress-bar/progress-bar.component'
 import { StarRatingsComponent } from './star-ratings/star-ratings.component'
-import { CreditCardInputComponent } from './credit-card-input/credit-card-input.component'
+import { CreditCardInputComponent } from './credit-card-input/credit-card-input.component';
+import { LoaderComponent } from './loader/loader.component'
 
 const routes: Routes = [
   {
@@ -24,6 +25,7 @@ const routes: Routes = [
     ProgressBarComponent,
     StarRatingsComponent,
     CreditCardInputComponent,
+    LoaderComponent,
   ],
   imports: [
     CommonModule,
